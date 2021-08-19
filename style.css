@@ -1,0 +1,57 @@
+body{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.champs{
+    width: 210px;
+    height: 210px;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+/* ELEMENT */
+#canvas{
+    border: 4px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    width: 1000px;
+    height: 600px;
+    background-image: url('fond_canvas.jpg');
+    background-repeat: round;
+}
+#choixPlein{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+#barreOutil{
+    display: flex;
+    align-items: center;
+}
+#barreOutil > div{
+    margin: 15px 15px;
+}
+#champTailleOutil, #champCouleur{
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(190, 190, 190, 0.2);
+}
+#champPlein{
+    position: relative;
+    background-image: url('fond_canvas.jpg');
+    justify-content: center;
+}
+#cursorTitre{
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.cercle{
+    border-radius: 50%;
+}

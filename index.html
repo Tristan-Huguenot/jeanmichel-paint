@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardoise - Tristan Huguenot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <canvas id="canvas">Votre naviguateur n'est pas à jour.</canvas>
+
+    <div id="barreOutil">
+        <div id="champPlein" class="champs">
+            <h2 id="cursorTitre">Craie</h2>
+            <div id="choixPlein" class="cercle"></div>
+        </div>
+        <div id="champTailleOutil" class="champs">
+            <label for="tailleOutil">Choix de la taille</label>
+            <input type="range" id="tailleOutil" name="tailleOutil" min="1" max="100">
+            <p id="affichageTaille">Taille = 5</p>
+        </div>
+        <div id="champCouleur" class="champs">
+            <label for="couleur">Choix de la Couleur</label>
+            <input type="color" id="couleur" name="couleur">
+            <input type="text" id="couleurTexte" value="#000">
+        </div>
+    </div>
+    <button id="dl">Enregistrer</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
